@@ -35,11 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Fibonacci.o \
-	${OBJECTDIR}/For.o \
-	${OBJECTDIR}/Operadores.o \
-	${OBJECTDIR}/While.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/NumeroMayorD4.o
 
 
 # C Compiler Flags
@@ -66,30 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fuendamentosdeprogramacion1cm2.exe: $
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fuendamentosdeprogramacion1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Fibonacci.o: Fibonacci.c
+${OBJECTDIR}/NumeroMayorD4.o: NumeroMayorD4.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fibonacci.o Fibonacci.c
-
-${OBJECTDIR}/For.o: For.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/For.o For.c
-
-${OBJECTDIR}/Operadores.o: Operadores.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Operadores.o Operadores.c
-
-${OBJECTDIR}/While.o: While.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/While.o While.c
-
-${OBJECTDIR}/main.o: main.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumeroMayorD4.o NumeroMayorD4.c
 
 # Subprojects
 .build-subprojects:

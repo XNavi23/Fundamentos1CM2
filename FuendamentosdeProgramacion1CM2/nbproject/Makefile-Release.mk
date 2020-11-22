@@ -37,6 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Fibonacci.o \
 	${OBJECTDIR}/For.o \
+	${OBJECTDIR}/Numero\ Mayor\ de\ 3.o \
+	${OBJECTDIR}/NumeroMayorD4.o \
 	${OBJECTDIR}/Operadores.o \
 	${OBJECTDIR}/While.o \
 	${OBJECTDIR}/main.o
@@ -75,6 +77,17 @@ ${OBJECTDIR}/For.o: For.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/For.o For.c
+
+.NO_PARALLEL:${OBJECTDIR}/Numero\ Mayor\ de\ 3.o
+${OBJECTDIR}/Numero\ Mayor\ de\ 3.o: Numero\ Mayor\ de\ 3.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Numero\ Mayor\ de\ 3.o Numero\ Mayor\ de\ 3.c
+
+${OBJECTDIR}/NumeroMayorD4.o: NumeroMayorD4.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumeroMayorD4.o NumeroMayorD4.c
 
 ${OBJECTDIR}/Operadores.o: Operadores.c
 	${MKDIR} -p ${OBJECTDIR}

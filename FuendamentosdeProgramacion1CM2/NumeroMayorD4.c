@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
                 printf ("%d es mayor\n",c);
     }
     else if (d>a && d>b && d>c){
-                printf ("%d es mayor\n",c);
+                printf ("%d es mayor\n", d);
     }
                 
     

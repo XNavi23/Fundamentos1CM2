@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>-FuncionesH.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,13 +13,22 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>-FuncionesC.c</itemPath>
+      <itemPath>-MainFunciones.c</itemPath>
+      <itemPath>ArrayYCadenas.c</itemPath>
+      <itemPath>Asignaciones.c</itemPath>
+      <itemPath>Asignaciones2.c</itemPath>
+      <itemPath>Burbuja.c</itemPath>
+      <itemPath>Clase5.c</itemPath>
       <itemPath>Fibonacci.c</itemPath>
       <itemPath>For.c</itemPath>
-      <itemPath>Numero Mayor de 3.c</itemPath>
+      <itemPath>FuncionesMatematicas.c</itemPath>
+      <itemPath>MenuFunTemperaturas.c</itemPath>
+      <itemPath>NumeroMayorD3.c</itemPath>
       <itemPath>NumeroMayorD4.c</itemPath>
       <itemPath>Operadores.c</itemPath>
       <itemPath>While.c</itemPath>
-      <itemPath>main.c</itemPath>
+      <itemPath>newmain.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -42,7 +52,11 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="NumeroMayorD4.c" ex="false" tool="0" flavor2="0">
+      <item path="-FuncionesC.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="-FuncionesH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="-MainFunciones.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -65,11 +79,31 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="-FuncionesC.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="-FuncionesH.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="-MainFunciones.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ArrayYCadenas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Asignaciones.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Asignaciones2.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Burbuja.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Clase5.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="For.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Numero Mayor de 3.c" ex="false" tool="0" flavor2="0">
+      <item path="FuncionesMatematicas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="MenuFunTemperaturas.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="NumeroMayorD3.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="NumeroMayorD4.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -77,7 +111,7 @@
       </item>
       <item path="While.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="main.c" ex="false" tool="0" flavor2="0">
+      <item path="newmain.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -35,8 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/-FuncionesC.o \
-	${OBJECTDIR}/-MainFunciones.o
+	${OBJECTDIR}/Burbuja.o
 
 
 # C Compiler Flags
@@ -63,15 +62,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fuendamentosdeprogramacion1cm2.exe: $
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fuendamentosdeprogramacion1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/-FuncionesC.o: -FuncionesC.c
+${OBJECTDIR}/Burbuja.o: Burbuja.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/-FuncionesC.o -FuncionesC.c
-
-${OBJECTDIR}/-MainFunciones.o: -MainFunciones.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/-MainFunciones.o -MainFunciones.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Burbuja.o Burbuja.c
 
 # Subprojects
 .build-subprojects:

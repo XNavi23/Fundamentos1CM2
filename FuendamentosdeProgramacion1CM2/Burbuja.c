@@ -15,15 +15,23 @@ int main(int argc, char** argv) {
         scanf("%d", &array[i]);
     }
     // ~(UwU)~ 
-    i=0;
-    int j;
     
-    for(i=0;i<cant;i++){
-        for(j=0;j<cant;j++){
+    int j= 0;
+    
+    for(i;i<cant;i++){
+        for(j;j<cant;j++){
             if(array[j] > array[j+1]){
+                aux = array[j];
+                array[j] = array[j+1];
+                array[j+1] = aux;
             
             }
         }
+    }
+      printf("\n Valores en forma ascendente: \n");
+    
+    for(i;i<cant;i++){
+        printf("&d \n", array[i+1]);
     }
     
     return (EXIT_SUCCESS);
